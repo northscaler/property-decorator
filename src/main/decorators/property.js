@@ -5,11 +5,11 @@
  * @param {string} [arg0.name] The name of the generated property.
  * By default, it is the name of the backing property without its first character, as backing properties, by convention, should have a leading underscore prefix (`_`).
  * That way, backing property `_foo` results in a default property name of `foo`.
- * @param {boolean} [arg0.get=true} Whether to generate an accessor (`get` method).
+ * @param {boolean} [arg0.get=true] Whether to generate an accessor (`get` method).
  * The accessor is not generated if the class already has that accessor.
- * @param {boolean} [arg0.set=true} Whether to generate a mutator (`set` method).
+ * @param {boolean} [arg0.set=true] Whether to generate a mutator (`set` method).
  * The mutator is not generated if the class already has that mutator.
- * @param {string|boolean} [arg0.builder='with'} If a `boolean`, whether to generate a builder method with the prefix `with`.
+ * @param {string|boolean} [arg0.builder='with'] If a `boolean`, whether to generate a builder method with the prefix `with`.
  * If a `string`, the prefix of the builder method that will be generated.
  * The builder method is not generated if a mutator is not being generated, or the class already has a method `withXxx`, where `Xxx` is the value of the `name` parameter.
  * @param {boolean} [arg0.enumerable=false] The `enumerable` value to pass along to `Object.defineProperty()`.
