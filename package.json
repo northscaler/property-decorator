@@ -1,6 +1,6 @@
 {
   "name": "@northscaler/property-decorator",
-  "version": "0.1.0-pre.4",
+  "version": "0.1.0-pre.5",
   "description": "Provides enriched properties in classes",
   "homepage": "https://gitlab.com/northscaler-public/property-decorator",
   "repository": {
