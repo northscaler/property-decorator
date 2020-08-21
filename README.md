@@ -1,4 +1,4 @@
-# `@northscaler/entity-property-decorator`
+# `@northscaler/property-decorator`
 Provides behaviorially-rich public properties based on non-public backing properties on JavaScript classes.
 
 ## Overview
