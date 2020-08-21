@@ -74,7 +74,7 @@ if [ "$RM_TAG_PREFIX" == "$RM_STABLE" ]; then # this is a stable release
 fi
 
 if [ "$RM_TAG_PREFIX" == "$RM_NEXT" ]; then # this is a next-x.y release
-  if [ "$RM_PKG_PUBLISHED" == true ]; then # ...of decorators that's been published before
+  if [ "$RM_PKG_PUBLISHED" == true ]; then # ...of something that's been published before
     # check to see if there's a GA release
     RM_GA_RELEASE_EXISTS="$(node -e "console.log(JSON.parse(process.env.RM_PKG_PUBLISHED_VERSIONS).some(v=>v.match(/^\d+\.\d+\.\d+$/)))")" # "true" if there's a GA release
     echo "RM_GA_RELEASE_EXISTS=$RM_GA_RELEASE_EXISTS"
@@ -82,7 +82,7 @@ if [ "$RM_TAG_PREFIX" == "$RM_NEXT" ]; then # this is a next-x.y release
       echo "$LATEST_CMD"
       $LATEST_CMD
     fi
-  else # ...of decorators that's never been published
+  else # ...of something that's never been published
     echo "$LATEST_CMD"
     $LATEST_CMD
   fi
