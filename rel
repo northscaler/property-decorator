@@ -13,6 +13,5 @@ get release
 for it in $TYPES; do
     get release-$it
 done
-get tag-nodejs
 
 ./release $(echo -n "$TYPES" | tr ' ' '+') $@
