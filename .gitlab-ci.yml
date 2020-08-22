@@ -6,6 +6,7 @@
 before_script:
   - node --version
   - npm --version
+  - git clone https://gitlab.com/northscaler-public/release-management .release
 
 stages:
   - build
@@ -50,6 +51,6 @@ publish:
     - npm run make-distribution
     - export RM_TMP_TAG=cicd-$(date +%s)
     - npm publish --access public --tag $RM_TMP_TAG
-    - ./tag-nodejs
+    - .release/tag-nodejs
   only:
     - /^\d+\.\d+\.\d+(\-[^\.]+\.\d+)?$/
