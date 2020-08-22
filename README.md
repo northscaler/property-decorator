@@ -78,7 +78,7 @@ You can copy them straight out of this module's `package.json` if you want to.
 
 ## Best practices
 The idea is that the decorator takes care of the boilerplate and you take care of the important bits.
-That usually boils down to providing your own method that validates and possibly scrubs the incoming value passes it to a mutator.
+That usually boils down to providing your own method that validates and possibly scrubs the incoming value passed into to a mutator.
 
 For example, if you only want property `_foo` to contain even integers:
 ```javascript

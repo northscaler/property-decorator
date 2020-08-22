@@ -40,7 +40,7 @@
     "test": "run-s transpile unit-integration lint",
     "report": "nyc report --reporter=html",
     "lint": "prettier-standard --lint index.js 'src/**/*.js'",
-    "lint-staged": "prettier-standard --lint --staged --check",
+    "lint-staged": "prettier-standard --lint --staged --check 'src/**/*.js'",
     "format": "prettier-standard --format index.js 'src/**/*.js'",
     "make-distribution": "run-s transpile doc lic",
     "doc": "jsdoc --verbose -d docs -r -c jsdoc.json -R README.md src/main",
