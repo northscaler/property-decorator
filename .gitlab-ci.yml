@@ -6,6 +6,8 @@
 before_script:
   - node --version
   - npm --version
+  - apk update
+  - apk add git
   - git clone https://gitlab.com/northscaler-public/release-management .release
 
 stages:
