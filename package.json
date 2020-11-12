@@ -39,9 +39,9 @@
     "u": "mocha --exit 'src/test/unit/**/*.spec.js'",
     "test": "run-s transpile unit-integration lint",
     "report": "nyc report --reporter=html",
-    "lint": "prettier-standard --lint index.js 'src/**/*.js'",
-    "lint-staged": "prettier-standard --lint --staged --check 'src/**/*.js'",
-    "format": "prettier-standard --format index.js 'src/**/*.js'",
+    "lint": "standard --lint index.js 'src/**/*.js'",
+    "lint-staged": "standard --lint --staged --check 'src/**/*.js'",
+    "format": "standard --format index.js 'src/**/*.js'",
     "make-distribution": "run-s transpile doc lic",
     "doc": "jsdoc --verbose -d docs -r -c jsdoc.json -R README.md src/main",
     "lic": "node lic.js > LICENSE",
@@ -83,11 +83,10 @@
     "intercept-stdout": "0.1.2",
     "jsdoc": "3.6.6",
     "lodash.template": "4.5.0",
-    "mocha": "8.2.0",
+    "mocha": "8.2.1",
     "npm-run-all": "4.1.5",
     "nyc": "15.1.0",
-    "prettier-standard": "16.4.1",
-    "standard": "14.3.4"
+    "standard": "16.0.2"
   },
   "babel": {
     "sourceMaps": "both",
@@ -125,5 +124,11 @@
   "mocha": {
     "colors": true,
     "require": "@babel/register"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "volta": {
+    "node": "12.19.0"
   }
 }
