@@ -14,6 +14,6 @@ for it in $TYPES; do
     get release-$it
 done
 
-export SKIP_HUSKY_HOOKS=1
+export HUSKY_SKIP_HOOKS=1
 
 ./release $(echo -n "$TYPES" | tr ' ' '+') $@
